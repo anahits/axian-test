@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Soluciones Empresariales SA de CV</title>
+    <%- include('./partials/head') %>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <%- include('./partials/navigation') %>
+
+        <!-- MAIN CONTENT -->
+        <div class="container">
+            <div class="card text-center mt-5">
+                <div class="card-body">
+                    <h1><span class="fa fa-block"></span>
+                        <%= __('welcome')%>
+                    </h1>
+                    <p>
+                        <%= __('registred')%>
+                    </p>
+                    <div class="m-5 pl-5 pr-5">
+
+                        <a href="/login" class="btn btn-light">
+                            <span class="fa fa-user"></span>
+                            <%= __('login')%>
+
+                        </a>
+                        <a href="/signup" class="btn btn-light">
+                            <span class="fa fa-user"></span>
+                            <%= __('signup')%>
+
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- FOOTER -->
+        <%- include('./partials/footer') %>
+
+</body>
+
+</html>
